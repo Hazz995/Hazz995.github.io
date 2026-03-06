@@ -1,0 +1,190 @@
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background-image:
+url("../media/background/triangles-top.svg"),
+url("../media/background/triangles-bottom.svg");
+
+background-position:
+left top,
+right bottom;
+
+background-repeat:
+no-repeat,
+no-repeat;
+
+}
+
+/* CONTENEDOR */
+.main-content{
+display:flex;
+min-height:100vh;
+}
+
+/* ===== SIDEBAR ===== */
+aside{
+width:290px;
+background:#ffffff;
+padding:30px 20px;
+box-shadow:0 0 25px rgba(0,0,0,0.08);
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+/* FOTO */
+.my-photo{
+border-radius:16px;
+margin-bottom:15px;
+}
+
+/* NOMBRE */
+.title{
+font-size:22px;
+font-weight:600;
+margin-bottom:5px;
+}
+
+/* BADGE */
+.badge-profile{
+background:#e7f8f9;
+color:#1ebac3;
+padding:6px 14px;
+border-radius:20px;
+font-size:14px;
+margin-bottom:20px;
+}
+
+/* REDES */
+.social{
+display:flex;
+gap:12px;
+margin-bottom:25px;
+}
+
+.social a{
+color:#777;
+font-size:20px;
+transition:.25s;
+}
+
+.social a:hover{
+color:#1ebac3;
+transform:scale(1.15);
+}
+
+/* INFO */
+.contacts-block{
+list-style:none;
+width:100%;
+font-size:14px;
+}
+
+.contacts-block-item{
+padding:8px 0;
+border-bottom:1px solid #eee;
+}
+
+.contacts-block a{
+color:#1ebac3;
+text-decoration:none;
+}
+
+/* BOTON */
+.btn{
+display:block;
+margin-top:20px;
+padding:12px;
+text-align:center;
+background:#1ebac3;
+color:white;
+border-radius:25px;
+text-decoration:none;
+transition:.25s;
+}
+
+.btn:hover{
+background:#15939b;
+}
+
+/* ===== PANEL DERECHO ===== */
+.resume{
+flex:1;
+padding:60px 60px 60px 40px;
+position:relative;
+}
+
+/* TARJETA BLANCA */
+.resume{
+background:white;
+margin:40px;
+border-radius:18px;
+box-shadow:0 20px 40px rgba(0,0,0,0.1);
+z-index:1;
+}
+
+/* TITULO */
+.resume h2{
+font-size:26px;
+margin-bottom:15px;
+color:#1ebac3;
+position:relative;
+}
+
+.resume h2::after{
+content:"";
+width:40px;
+height:3px;
+background:#1ebac3;
+position:absolute;
+left:0;
+bottom:-8px;
+border-radius:3px;
+}
+
+/* TEXTO */
+.resume p{
+line-height:1.7;
+margin-bottom:30px;
+}
+
+/* GRID HABILIDADES */
+.skills{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+margin-top:30px;
+}
+
+/* TARJETAS */
+.skill-box{
+background:#f2f4f7;
+padding:20px;
+border-radius:12px;
+transition:.25s;
+}
+
+.skill-box:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 20px rgba(0,0,0,0.08);
+}
+
+.skill-box h3{
+font-size:16px;
+margin-bottom:8px;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:18px;
+font-size:14px;
+background:white;
+border-top:1px solid #e5e5e5;
+}
